@@ -335,7 +335,7 @@ def plot_static(network_xml, config_file, output_file=None, plt_show=False):
     return fig
 
 
-def plot_dynamic(network_xml, config_file, host="localhost", port=5555, max_request=2000000):
+def plot_dynamic(network_xml, config_file, host="localhost", port="5555", max_request=2000000):
     """
     Plot the dynamic network which connect to the GUI server of the ratatoskr simulator.
 
@@ -347,7 +347,7 @@ def plot_dynamic(network_xml, config_file, host="localhost", port=5555, max_requ
         Path of config.ini file
     host : str, optional
         tcp server host ip, by default "localhost"
-    port : int, optional
+    port : str, optional
         tcp port number, by default 5555
     max_request : int, optional
         maximum request count to the server, by default 2000000
