@@ -29,7 +29,7 @@ After the config.ini file has been created, we need to convert it into the forma
 The configuration settings can be stored in the variable "config" which will be used later on. "create_configuration()" uses the xml writers to get the config and network xml files written.  
 
 '''python
-config = rtcfg.create_configuration("./example/config.ini", "./example/config.xml", "./example/network.xml")
+config = rtcfg.create_configuration("./tutorials/example/config.ini", "./tutorials/example/config.xml", "./tutorials/example/network.xml")
 '''
 
 ## Network plot

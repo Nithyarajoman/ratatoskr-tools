@@ -14,7 +14,7 @@ Create the config.ini file and generate the config.xml and network.xml files.
 import ratatoskr_tools.networkconfig as rtcfg
 
 rtcfg.create_config_ini("./tutorials/example/config.ini")
-config = rtcfg.create_configuration(".tutorials/example/config.ini", "./tutorials/example/config.xml", "./tutorials/example/network.xml")
+config = rtcfg.create_configuration("./tutorials/example/config.ini", "./tutorials/example/config.xml", "./tutorials/example/network.xml")
 ```
 
 ## Step 2 Dynamic Network Plotting
@@ -32,7 +32,7 @@ rtnplt.plot_dynamic("./tutorials/example/network.xml", "./tutorials/example/conf
 
 Open another terminal to run the simulation, where this simulator is compiled. The same port address provided for GUI client is given here.
 
-> $ ./sim --configPath=./example/config.xml --networkPath=./example/network.xml --outputDir=./example --GUI_Port_address=6000
+> $ ./sim --configPath=./tutorials/example/config.xml --networkPath=./tutorials/example/network.xml --outputDir=./tutorials/example --GUI_Port_address=6000
 
 The ratatoskr GUI client windows will be opened.
 
