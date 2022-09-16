@@ -16,11 +16,11 @@ Let's start with the network configuration. First, we create a config.ini file, 
 
 Here, we create the config.ini file in the directory ./tutorials/example/. The function "create_config_ini()" will copy all the contents from the source config.ini file to the specified destination provided.
 
-'''python
+```python
 import ratatoskr_tools.networkconfig as rtcfg
 
 rtcfg.create_config_ini("./tutorials/example/config.ini")
-'''
+```
 
 After the config.ini file has been created, we need to convert it into the format ("config.xml" and "network.xml") which the simulator can accept for the simulations.
 - "config.xml" file contains the general information for the simulator, such as the injection rate of the flits, simulation time, etc.
@@ -28,9 +28,9 @@ After the config.ini file has been created, we need to convert it into the forma
 
 The configuration settings can be stored in the variable "config" which will be used later on. "create_configuration()" uses the xml writers to get the config and network xml files written.  
 
-'''python
+```python
 config = rtcfg.create_configuration("./tutorials/example/config.ini", "./tutorials/example/config.xml", "./tutorials/example/network.xml")
-'''
+```
 
 ## Network plot
 After the configuration, you can see the connection of your NoC through the following function. Through different given arguments, you can output the connection image into a file or let it shows during the program (it is recommended to set plt_show to False during automation).
